@@ -10,15 +10,19 @@ const options = {
     },
     resolve: {
         modules: ['node_modules', 'src/typescript'],
-        extensions: ['.ts', '.js']
+        extensions: ['.ts', '.js', '.pug']
     },
     module: {
+        exprContextCritical: false,
         rules: [{
             test: /\.json$/,
             use: ['json-loader']
         }, {
             test: /\.ts$/,
             use: ['ts-loader']
+        }, {
+            test: /\.pug$/,
+            use: ['raw-loader', 'pug-html-loader']
         }]
     },
     plugins: [

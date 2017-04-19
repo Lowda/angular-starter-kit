@@ -1,11 +1,7 @@
-interface Person {
-    firstName: string;
-    lastName: string;
-}
+import 'reflect-metadata';
+import 'zone.js'
 
-const greeter = (person: Person) => {
-    return `Hello ${person.firstName} ${person.lastName}`
-}
+declare var System: any;
 
-const user = { firstName: "Newbie", lastName: "User" };
-document.getElementById('app').innerHTML = greeter(user);
+System.import('./typescript/auth')
+    .then((App: any) => App.dispatch({ status: 401 }));
