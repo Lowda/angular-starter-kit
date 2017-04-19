@@ -1,6 +1,4 @@
-const DEBUG = process.env.NODE_ENV !== 'production';
-const TEST = process.env.NODE_ENV === 'test';
-const WATCH = process.env.NODE_WATCH === 'true';
+const { DEBUG } = require('./env');
 const __webpack = require('./webpack.config');
 const __dist = 'dist';
 const __ts_entry = 'src/bootstrap.ts';
@@ -15,7 +13,5 @@ module.exports = {
     __ts_entry,
     __stylus,
     __autoprefixer,
-    DEBUG,
-    TEST,
-    WATCH
+    __webpack
 }

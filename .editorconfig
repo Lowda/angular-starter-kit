@@ -14,7 +14,7 @@ trim_trailing_whitespace = true
 max_line_length = 0
 trim_trailing_whitespace = false
 
-[package.json]
+[package.json,tsconfig.json]
 indent_style = space
 indent_size = 2
 

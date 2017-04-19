@@ -9,16 +9,17 @@ const stylus = require('gulp-stylus');
 const revReplace = require('gulp-rev-replace');
 const webpackStream = require('webpack-stream');
 const autoprefixer = require('gulp-autoprefixer');
-const sftp = require('gulp-sftp');
+const path = require('path');
 
 const { end } = require('./make/libs');
+const { DEBUG } = require('./make/env');
+
 const {
     __dist,
     __ts_entry,
     __autoprefixer,
     __stylus,
-    __webpack,
-    DEBUG
+    __webpack
 } = require('./make/config');
 
 /** @gulp: default -> dist -> typescript */
