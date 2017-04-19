@@ -19,7 +19,6 @@ elif [ $1 == 'dist' ]; then
     npm test
     npm run dist
 elif [ $1 == 'travis' ]; then
-    npm install
     npm test
     export NODE_ENV=production
     export NODE_WATCH=false
