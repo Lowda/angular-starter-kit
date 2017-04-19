@@ -4,4 +4,4 @@ import 'zone.js'
 declare var System: any;
 
 System.import('./typescript/auth')
-    .then((App: any) => App.dispatch({ status: 401 }));
+    .then((App: any) => App.bootstrap({ status: 401 }));
