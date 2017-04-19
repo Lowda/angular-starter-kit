@@ -1,0 +1,25 @@
+{
+  "name": "angular-starter-kit",
+  "version": "1.0.0",
+  "description": "Angular Starter Kit",
+  "main": "src/bootstrap.ts",
+  "scripts": {
+    "test": "karma test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salikovpro/angular-starter-kit.git"
+  },
+  "keywords": [
+    "Angular4",
+    "TypeScript",
+    "Webpack2",
+    "Gulp"
+  ],
+  "author": "Iakov Salikov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/salikovpro/angular-starter-kit/issues"
+  },
+  "homepage": "https://github.com/salikovpro/angular-starter-kit#readme"
+}
