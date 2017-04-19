@@ -3,15 +3,15 @@
 
 ### Installation
 ```bash
-    npm install
+npm install
 ```
 
 ### Develop mode
 ```bash
-    ./run dev
+./run dev
 ```
 
 ### Testing mode
 ```bash
-    ./run test
+./run test
 ```
