@@ -5,3 +5,5 @@ cache:
 
 node_js:
  - "6.10.2"
+
+script: ./run travis
